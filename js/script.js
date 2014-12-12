@@ -1,6 +1,6 @@
 var sliderControl = null
 
-var map = L.map('map').setView([11.19059, -74.20099], 12);
+var map = L.map('map').setView([11.19059, -74.20099], 13);
 var Esri_WorldTopoMap = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
         attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community',
         minZoom: 0,
@@ -19,7 +19,9 @@ $.getJSON('./js/1989.geojson', function(data) {
             weight: "0",
             opacity: ".6",
         }
-        })
+        },
+        {time: "2013-01-22 08:42:26+01"
+    })
 });
 
 $.getJSON('./js/2000.geojson', function(data) {
@@ -32,7 +34,9 @@ $.getJSON('./js/2000.geojson', function(data) {
             weight: "0",
             opacity: ".6",
         }
-        })
+        },
+        {time: "2013-01-22 10:00:26+01"
+    })
 });
 
 $.getJSON('./js/2013.geojson', function(data) {
@@ -45,7 +49,9 @@ $.getJSON('./js/2013.geojson', function(data) {
             weight: "0",
             opacity: ".6",
         }
-        })
+        },
+        {time: "2013-01-22 10:03:29+01"
+    })
 });
 
 $.getJSON('./js/2026.geojson', function(data) {
@@ -87,10 +93,10 @@ $.getJSON('./js/2078.geojson', function(data) {
         })
 });
 
-layerGroup = L.layerGroup([geojsonLayer, geojsonLayer2, geojsonLayer3, geojsonLayer4, geojsonLayer5, geojsonLayer6 ]);
+layerGroup = L.layerGroup(['geojsonLayer', 'geojsonLayer2', 'geojsonLayer3', 'geojsonLayer4','geojsonLayer5', 'geojsonLayer6' ]);
 var sliderControl = L.control.sliderControl({position: "topright", layer:layerGroup, range: true});
         //Make sure to add the slider to the map
-        myMap.addControl(sliderControl);
+        map.addControl(sliderControl);
         //And initialize the slider
         sliderControl.startSlider();
 
