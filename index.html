@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>The Urbanization of Santa Marta</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <!-- Adding jquery-ui.css -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" type="text/css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+</head>
+<body>
+
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Delete everything in this .container and get started on your own site! -->
+
+	<div class="container">
+		<div class="sixteen columns">
+			<h1 class="remove-bottom" style="margin-top: 40px">The Urbanization of Santa Marta</h1>
+			<h5>A tool to visualize the urban land cover expansion in the city of Santa Marta, Colombia between 1989 and 2078</h5>
+			<hr />
+		</div>
+		<div class="container">
+		<div class="sixteen columns">
+			<h3>Interactive Urban Expansion Map</h3>
+			<p class="remove-bottom">To visualize urban land cover expansion through time simply drag the timeline below to the desired year</p>
+		</div>
+		</div>
+		<div class="container">
+		<div class="sixteen columns">
+			 <a href="http://leafletjs.com/reference.html"></a>. </p>
+             <div id="map"></div> 
+             <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+             <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+             <script src="https://rawgit.com/calvinmetcalf/leaflet-ajax/master/dist/leaflet.ajax.min.js"></script>
+             <!-- jquery.js and jquery-ui.js required for the slider -->
+             <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    		 <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+   			 <!-- Include this library for mobile touch support  -->
+    		 <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script>
+             <script src="js/SliderControl.js"></script>
+             <script src="js/script.js"></script> 
+             
+		</div>
+		</div>
+    <div class="container">
+		<div class="sixteen columns">
+			<h3 class="remove-bottom" style="margin-top: 40px">About the City</h3>
+    <h5>Located amid the highest coastal mountain range in the world, Santa Marta is the third-largest city of Colombia's Caribbean coast. Due to its fast growing tourism industry, and it receiving a vast number of displaced persons, Santa Marta has experienced rapid population growth over the last three decades. This has led the city to expand quickly in the form of private middle class subdivision development and informal settlements. The City's progressive local government recently revised its landuse plan to help prevent unsustainable urban growth. 
+    <br>
+    Santa Marta is the oldest European city in Colombia, which along with its touristic asstes it has been design as a touristic, cultural, and historical district.</h5>
+    <br>
+            <h3 class="remove-bottom" style="margin-top: 40px">About the Project</h3>
+    <h5>The urban lad cover areas of 1989, 2000, and 2013 were generated with Landsat TM 5 multispectral satellite imagery.
+    <br>
+    Urban land cover projections of 2026, 2039, and 2078 were created with LanduseSIM software with a regression model that used previous landcover growth rates, road infrastructure, and topography. 
+    <br>
+    Special thanks to the LanduseSIM folks and to Geografia Urbana for providing roads and topography data</h5>  
+			<hr />
+		</div>
+		</div>
+			
+		
+
+
+	</div><!-- container -->
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>
