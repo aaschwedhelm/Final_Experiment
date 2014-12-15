@@ -105,9 +105,10 @@ L.Control.SliderControl = L.Control.extend({
                         }
                     } else {
                         if (ui.value < breakPoints[i] && i !== 6) {
-                            _options.map.removeLayer(_options.markers[breakPoints[i]]);
+                            
                             for (var k = 0; k < _options.activeLayers.length; k++) {
                                 if (breakPoints[i] === _options.activeLayers[k]) {
+                                    _options.map.removeLayer(_options.markers[breakPoints[i]]);
                                     _options.activeLayers.splice(k, 1);
                                 }
                             }
