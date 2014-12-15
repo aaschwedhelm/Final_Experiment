@@ -11,37 +11,6 @@ var Esri_WorldTopoMap = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/
     }).addTo(map);
 
 
-// var populationLegend = L.control({position: 'bottomright'});
-// var populationChangeLegend = L.control({position: 'bottomright'});
-
-// populationLegend.onAdd = function (map) {
-// var div = L.DomUtil.create('div', 'info legend');
-//     div.innerHTML +=
-//     '<img src="legend.png" alt="legend" width="400" height="35">';
-// return div;
-// };
-
-// populationChangeLegend.onAdd = function (map) {
-// var div = L.DomUtil.create('div', 'info legend');
-//     div.innerHTML +=
-//     '<img src="change_legend.png" alt="legend" width="400" height="35">';
-// return div;
-// };
-
-// // Add this one (only) for now, as the Population layer is on by default
-// populationLegend.addTo(map);
-
-// map.on('overlayadd', function (eventLayer) {
-//     // Switch to the Population legend...
-//     if (eventLayer.name === 'Population') {
-//         this.removeControl(populationChangeLegend);
-//         populationLegend.addTo(this);
-//     } else { // Or switch to the Population Change legend...
-//         this.removeControl(populationLegend);
-//         populationChangeLegend.addTo(this);
-//     }
-// });
-
 var numberOfJSONFiles = 6;
 
 function getJSON (url, rgb, time) {
@@ -83,8 +52,6 @@ function receivedData () {
     //And initialize the slider
     sliderControl.startSlider();
 }
-
-
 
 
 
