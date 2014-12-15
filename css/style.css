@@ -6,7 +6,7 @@ body {
 }
 h1 {
         font-size: 40px;
-      	margin-top:0;
+        margin-top:0;
         color: black;
         text-align: center;
         padding: 5px;
@@ -18,12 +18,12 @@ h2 {
         padding: 5px;
 }
 p1 {
-	    color: black;
-	    font-size:15px;
-	    font-weight: bold;
+        color: black;
+        font-size:15px;
+        font-weight: bold;
 }
 p2 {
-	    color: black;
+        color: black;
         font-size:15px;
         font-weight: bold;
 }
@@ -32,8 +32,8 @@ p3 {
         font-size:15px;
 }
 p4 {
-	    color: black;
-	    font-size:15px;
+        color: black;
+        font-size:15px;
 }
 .geojsonLayer4 {
     z-index: 2 !important;
@@ -41,4 +41,8 @@ p4 {
 
 .geojsonLayer3 {
     z-index: 1 !important;
+}
+
+#slider-timestamp {
+    background: rgba(255,255,255,0.8);
 }
