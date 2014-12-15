@@ -76,7 +76,7 @@ L.Control.SliderControl = L.Control.extend({
     },
 
     startSlider: function () {
-        var breakPoints = [25, 1750, 2505, 5826, 12694, 22238, 29803];
+        var breakPoints = [25, 1750, 2505, 5826, 12696, 21565];
         _options = this.options;
         $("#leaflet-slider").slider({
             range: _options.range,
@@ -105,9 +105,9 @@ L.Control.SliderControl = L.Control.extend({
                         }
                     } else {
                         if (ui.value < breakPoints[i] && i !== 6) {
-                            _options.map.removeLayer(_options.markers[breakPoints[i]]);
                             for (var k = 0; k < _options.activeLayers.length; k++) {
                                 if (breakPoints[i] === _options.activeLayers[k]) {
+                                    _options.map.removeLayer(_options.markers[breakPoints[i]]);
                                     _options.activeLayers.splice(k, 1);
                                 }
                             }
