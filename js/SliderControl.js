@@ -76,7 +76,7 @@ L.Control.SliderControl = L.Control.extend({
     },
 
     startSlider: function () {
-        var breakPoints = [25, 1750, 2503, 9373, 126964, 22238];
+        var breakPoints = [25, 1750, 8618, 18162, 27031, 27786, 29803];
         _options = this.options;
         $("#leaflet-slider").slider({
             range: _options.range,
