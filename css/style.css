@@ -42,3 +42,7 @@ p4 {
 .geojsonLayer3 {
     z-index: 1 !important;
 }
+
+#slider-timestamp {
+    background: rgba(255,255,255,0.8);
+}
